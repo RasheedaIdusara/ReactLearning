@@ -9,6 +9,13 @@ const App = () => {
   const [city, setcity] = useState("");
   const [position, setposition] = useState("");
 
+  const[inputdata,setinputdata]=useState({
+    imageurl:'',
+    name:'',
+    city:'',
+    position:'',
+  });
+
   const[mydata,setmydata] = useState([]);
 
   console.log(mydata);

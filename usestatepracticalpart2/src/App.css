@@ -1,0 +1,79 @@
+.main_container{
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+
+}
+
+.main_left {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.header_container{
+  width: 100%;
+  margin-bottom: 100px;
+  background-color: rgb(223, 141, 141);
+  padding: 20px;
+  position:sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+  display: flex;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_container nav{
+  position: relative;
+}
+
+.header_container nav ul{
+  position: absolute;
+  top: -22px;
+  right: -22px;
+  padding: 20px;
+  height: 100vh;
+  background-color: rgb(158, 74, 116);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 400ms ease-in;
+}
+
+.header_container .header_menuclose{
+cursor: pointer;
+}
+
+.header_container .header_menu{
+  margin: 50px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.header_container nav ul li{
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 400ms ease-in;
+}
+
+.header_container nav ul li:hover {
+  color: red;
+
+}
+
